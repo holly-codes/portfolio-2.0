@@ -20,7 +20,7 @@ export const Header: FunctionComponent = () => {
             <Link href="about/">About</Link>
           </li>
           <li>
-            <Link href="projects/">Projects</Link>
+            <Link href="experience-projects/">Experience & Projects</Link>
           </li>
           <li>
             <Link href="resume/">Resume</Link>

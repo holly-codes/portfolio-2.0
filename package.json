@@ -13,6 +13,8 @@
     "contentful-update": "npm run contentful-export && npm run contentful-typegen"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "contentful": "^10.8.6",
     "contentful-cli": "^3.1.44",
     "next": "14.1.4",

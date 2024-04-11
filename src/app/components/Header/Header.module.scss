@@ -1,25 +1,30 @@
-.headerContainer{
+.headerContainer {
     display: flex;
-    width: 100%;
     margin: 30px;
 
-    .navigationLinks{
+    .navigationLinks {
         display: flex;
         align-content: center;
 
-        ul{
+        ul {
             display: flex;
             justify-content: space-around;
             align-items: center;
 
-            li{
+            li {
                 list-style: none;
 
-                a{
+                a {
                     color: black;
                     margin-right: 15px;
+                    text-decoration: none;
+
+                    &:hover,
+                    &:focus {
+                        text-decoration: underline;
+                    }
                 }
             }
-                }
+        }
     }
 }
