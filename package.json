@@ -6,19 +6,27 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "contentful-export": "contentful space export --export-dir contentful --content-file export.json --management-token $CONTENTFULTOKEN --space-id $CONTENTFULSPACEID",
+    "contentful-typegen": "cf-content-types-generator contentful/export.json -o types/contentful",
+    "contentful-typegen-help": "cf-content-types-generator --help",
+    "contentful-update": "npm run contentful-export && npm run contentful-typegen"
   },
   "dependencies": {
+    "contentful": "^10.8.6",
+    "contentful-cli": "^3.1.44",
+    "next": "14.1.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cf-content-types-generator": "^2.15.0",
     "eslint": "^8",
-    "eslint-config-next": "14.1.4"
+    "eslint-config-next": "14.1.4",
+    "sass": "^1.74.1",
+    "typescript": "^5"
   }
 }
