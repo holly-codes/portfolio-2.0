@@ -6,12 +6,14 @@ import Link from "next/link";
 export const Header: FunctionComponent = () => {
   return (
     <div className={styles.headerContainer}>
-      <Image
-        src="/images/logo-larger.png"
-        alt="Logo with hand drawn lavender sprig and initials H B, surrounded by a circle"
-        style={{ objectFit: "none" }}
-        fill
-      />
+      <Link href="/">
+        <Image
+          src="/images/logo-larger.png"
+          alt="Logo with hand drawn lavender sprig and initials H B, surrounded by a circle"
+          width="75"
+          height="75"
+        />
+      </Link>
       <div className={styles.navigationLinks}>
         <ul>
           <li>

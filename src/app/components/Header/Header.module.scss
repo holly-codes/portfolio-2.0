@@ -1,15 +1,25 @@
 .headerContainer{
     display: flex;
+    width: 100%;
+    margin: 30px;
 
     .navigationLinks{
         display: flex;
+        align-content: center;
 
-        li{
-            list-style: none;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
 
-             a{
-                color: black;
-             }
-        }
+            li{
+                list-style: none;
+
+                a{
+                    color: black;
+                    margin-right: 15px;
+                }
+            }
+                }
     }
 }

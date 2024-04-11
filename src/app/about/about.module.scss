@@ -1,13 +1,17 @@
 .aboutContainer{
     .statsContainer{
-
-    display: flex;
+        display: flex;
         flex-direction: column;
         text-align: center;
     }
 
+    .imageContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
 
-.imageContainer {
-    width: 50%;
-}
+        img{
+            border-radius: 50%;
+        }
+    }
 }
