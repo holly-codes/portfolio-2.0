@@ -1,6 +1,6 @@
 import { JobSection } from "../components/JobSection/JobSection";
 import { PageWrapper } from "../components/PageWrapper";
-import styles from "../page.module.css";
+import styles from "../page.module.scss";
 
 export default function Resume() {
   return (
